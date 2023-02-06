@@ -18,7 +18,9 @@ const Navbar = () => {
               index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
             } text-white`}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`#${nav.id}`} className='hover:text-secondary'>
+              {nav.title}
+            </a>
           </li>
         ))}
       </ul>

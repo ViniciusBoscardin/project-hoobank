@@ -3,12 +3,12 @@ import styles from '../style';
 
 const Clients = () => (
   <section className={`${styles.flexCenter} my-4`}>
-    <div className={`${styles.flexCenter} w-full`}>
+    <div className={`${styles.flexCenter} flex-wrap w-full`}>
       {clients.map((client) => (
         <div
           key={client.id}
           id={client.id}
-          className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-5`}
+          className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-5 `}
         >
           <img
             src={client.logo}
